@@ -10,7 +10,7 @@ docker build and publish:
     DOCKER_DRIVER: overlay2
     DOCKER_HOST: tcp://docker:2375/
     REPOSITORY_URI: edsonalcala
-    PROJECT_NAME: mythril-ci
+    PROJECT_NAME: slither-ci
   script:
     - SHORT_SHA=${CI_COMMIT_SHA:0:8}
     - echo "$SHORT_SHA"
