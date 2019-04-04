@@ -1,0 +1,12 @@
+#!/bin/bash
+
+files=$(find . -type f)
+
+for i in $files; do
+    echo "scanning file $i"
+    slither $i
+    if [ $? -ne 0 ]; then
+        exit 1
+        echo "the result was $?"
+    fi
+done
