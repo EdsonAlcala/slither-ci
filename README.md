@@ -1,4 +1,4 @@
-# Mythril CI
+# Slither CI
 
 Container to run [Slither](https://github.com/crytic/slither) in a CI environment
 
